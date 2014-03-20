@@ -24,9 +24,19 @@ define(function (require) {
             "": "getHome",
             "news": "getGeneric",
             "news-item/:id": "getGenericItem",
-
+            "sport": "getGeneric",
+            "sport-item/:id": "getGenericItem",
+            "about-us": "getGeneric",
+            "about-us-item/:id": "getGenericItem",
+            "extra": "getGeneric",
+            "extra-item/:id": "getGenericItem",
+            "facilities": "getGeneric",
+            "facilities-item/:id": "getGenericItem",
+            "school-policies": "getGeneric",
+            "school-policies-item/:id": "getGenericItem",
             
             /*****In Every Project**************/
+            "contact": "getContact",
             "events": "getEvent",
             "events-item/:id": "getEventItem",
             "facebook": "getFacebook",
@@ -659,6 +669,14 @@ define(function (require) {
                 that.body.find('#main-content').css('min-height', '500px');
                 
                 Useful.hideSpinner();
+             });
+        },
+                
+        getContact: function () {
+            
+            require(["app/views/Contact"], function (Contact) { 
+                Useful.correctView(that.body);
+                slider.slidePage(new Contact().$el);               
              });
         },
 
