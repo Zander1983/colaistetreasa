@@ -36,7 +36,6 @@ define(function (require) {
                         return "/school-proxy.php?context="+Backbone.history.fragment+"&flickr_api_key="+this.flickr_api_key+"&flickr_user_id="+this.flickr_user_id;
                     }
             },
-            
         
             parse: function (data) {
                 xml = data;

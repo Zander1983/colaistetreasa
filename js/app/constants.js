@@ -6,7 +6,6 @@
     var project_title = "colaistetreasa", 
         project_number = "792346808724", 
         push_server_url = "http://push.schoolspace.ie", 
-        feed_domain = "http://www.colaistetreasa.com", 
         standard_device_id = "63843", 
         standard_api_key = "hv7Vgd4jsbb",
         school_name = "Colaiste Treasa Scondary School",
