@@ -712,8 +712,6 @@ define(function (require) {
         
         setProjectDetailsWait: function(){
      
-                    console.log('in setProjectDetailsWait');
-                    
                     project = new projectModel.Project({id:project_title});
 
                     return project.fetch({
@@ -721,8 +719,6 @@ define(function (require) {
                         async:false,
                         headers: {device_id:standard_device_id,api_key:standard_api_key},        
                         success: function (data) {
-
-                            console.log('in setProjectDetailsWait success');
 
                             flickr_user_id = data.get('flickr_user_id');
                             flickr_api_key = data.get('flickr_api_key');
