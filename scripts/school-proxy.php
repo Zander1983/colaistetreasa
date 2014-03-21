@@ -16,7 +16,6 @@
     $feeds["facilities"]  = '/index.php?option=com_ninjarsssyndicator&feed_id=8&format=raw'; 
     $feeds["school-policies"]  = '/index.php?option=com_ninjarsssyndicator&feed_id=9&format=raw'; 
 
-    
     $feeds['events'] = 'https://www.google.com/calendar/feeds/'.$gmail.'/public/full?orderby=starttime&sortorder=ascending&max-results=10&futureevents=true';
 
     $feeds['albums']= 'http://api.flickr.com/services/rest/?method=flickr.photosets.getList&api_key='.$flickr_api_key.'&user_id='.$flickr_user_id;
